@@ -4,7 +4,7 @@ A collection of tools that are needed every now and then. Some tools are just (m
 ## Install via npm <span style="vertical-align:middle">[![Current Version](https://img.shields.io/npm/v/sh.misc-tools.svg)](https://www.npmjs.com/package/sh.misc-tools)</span>
 `npm install sh.misc-tools`
 
-## Isncluded Tools
+## Included Tools
 Currently, this collection includes the following:
 * __FTP-Tools__ (note the returned Client is the instance of the package `ftp`):
   * __`async connectFtp(options) => Promise.<Client>`__
