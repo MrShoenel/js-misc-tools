@@ -1,5 +1,7 @@
 const { connectFtp, connectFtpUploadClose, uploadFtpFile } = require('./lib/ftpTools')
-, { pingPort, tryPingPort } = require('./lib/networkTools');
+, { pingPort, tryPingPort } = require('./lib/networkTools')
+, { moveFileByCopy, probeDir, renameFile } = require('./lib/fsTools')
+, { timeout, attempt } = require('./lib/miscTools');
 
 
 module.exports = Object.freeze({
@@ -7,5 +9,7 @@ module.exports = Object.freeze({
   connectFtpUploadClose,
   uploadFtpFile,
   pingPort,
-  tryPingPort
+  tryPingPort,
+  moveFileByCopy, probeDir, renameFile,
+  timeout, attempt
 });
