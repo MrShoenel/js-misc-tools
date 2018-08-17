@@ -21,3 +21,4 @@ Currently, this collection includes the following:
   * __`async probeDir(dir) => Promise.<Array.<string>>`__ Checks if a directory is readable and returns the contained files/folders
   * __`async moveFileByCopy(src, dst) => Promise.<void>`__
   * __`async renameFile(src, dst) => Promise.<void>`__
+  * __`async unlinkFile(src) => Promise.<void>`__
