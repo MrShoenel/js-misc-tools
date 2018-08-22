@@ -11,6 +11,8 @@ Currently, this collection includes the following:
   * __`async mkdirFtp(client, directory, recursive = true) => Promise.<Client>`__
   * __`async uploadFtpFile(client, localFile, remoteFile, mkdirP = true) => Promise.<Client>`__
   * __`async connectFtpUploadClose(opts, localFile, remoteFile, mkdirP = true) => Promise.<void>`__ Connect to server, upload the file, disconnect
+  * __`async listFtpDir(client, dir, useComp) => Promise.<Array.<Client.ListingElement>>`__
+  * __`async getFtpFile(client, file, useComp) => Promise.<NodeJS.ReadableStream>`__
 * __Network-Tools__:
   * __`async pingPort(host, port, timeout = 500, family = 4) => Promise.<void>`__ Attempts to open a Socket to `host:port` and resolves if it worked within `timeout`; rejects, otherwise.
   * __`async tryPingPort(host, port, timeout = 500, family = 4) => Promise.<boolean>`__ Like 'pingPort()', but _always_ resolves with a `boolean`.
