@@ -6,6 +6,8 @@ A collection of tools that are needed every now and then. Some tools are just (m
 
 ## Included Tools
 This package includes tools as I needed them, so it is in no way complete. Currently, this collection includes the following:
+* __Extensions for package `sh.orchestration-tools`__ (`npm install sh.orchestration-tools`):
+	* __`Calendar`__, __`CalendarError`__, __`CalendarEventSimple`__,	__`CalendarScheduler`__, __`symbolCalendarEvent`__: These can be used with the scheduler in sh.orchestration-tools for scheduling events that are sourced from an __iCal__-calendar (from file or, e.g, online, like google calendar or nextcloud).
 * __FTP-Tools__ (note the returned Client is the instance of the package `ftp`):
   * __`async connectFtp(options) => Promise.<Client>`__
   * __`async mkdirFtp(client, directory, recursive = true) => Promise.<Client>`__
